@@ -18,6 +18,7 @@ import { StatusBadge } from "@/shared/components/StatusBadge"
 import { useAlerts } from "@/shared/hooks/useAlerts"
 import { companyList, deviceList, locationList } from "@/shared/mock"
 import type { Alert } from "@/shared/mock/domainTypes"
+import type { Company, Device, Location } from "@/shared/mock/types"
 import { formatISODate, formatRelativeTime } from "@/shared/utils/date"
 import { Button } from "@/shared/ui/button"
 import { Badge } from "@/shared/ui/badge"
@@ -81,13 +82,17 @@ export function AlertsPage() {
     refetch()
   }, [companyId, locationId, deviceId, refetch])
 
+  const companies = companyList as Company[]
+  const devices = deviceList as Device[]
+  const locations = locationList as Location[]
+
   const rows = useMemo<AlertRow[]>(() => {
     return data.map((alert) => {
-      const deviceInfo = deviceList.find((item) => item.id === alert.deviceId)
-      const locationInfo = locationList.find(
+      const deviceInfo = devices.find((item) => item.id === alert.deviceId)
+      const locationInfo = locations.find(
         (item) => item.id === alert.locationId
       )
-      const companyInfo = companyList.find(
+      const companyInfo = companies.find(
         (item) => item.id === alert.companyId
       )
 
@@ -98,7 +103,7 @@ export function AlertsPage() {
         companyName: companyInfo?.name ?? "Unknown",
       }
     })
-  }, [data])
+  }, [companies, data, devices, locations])
 
   const filteredRows = useMemo(() => {
     return rows.filter((alert) => {

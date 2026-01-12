@@ -112,11 +112,11 @@ export function StaffPage() {
   }, [contextLocationId, isOpen, locationId])
 
   const companyById = useMemo(() => {
-    return new Map(companies.map((company) => [company.id, company]))
+    return new Map<string, Company>(companies.map((company) => [company.id, company]))
   }, [companies])
 
   const locationById = useMemo(() => {
-    return new Map(locations.map((location) => [location.id, location]))
+    return new Map<string, Location>(locations.map((location) => [location.id, location]))
   }, [locations])
 
   const filteredLocations = useMemo(() => {

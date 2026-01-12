@@ -52,11 +52,11 @@ export function ReportsPage() {
   const dispatch = useAppDispatch()
   const contextCompanyId = useAppSelector(selectCompanyId)
   const contextLocationId = useAppSelector(selectLocationId)
-  const items = useAppSelector(selectReports)
+  const items = useAppSelector(selectReports) as Report[]
   const status = useAppSelector(selectReportsStatus)
   const error = useAppSelector(selectReportsError)
-  const locations = useAppSelector(selectLocations)
-  const companies = useAppSelector(selectCompanies)
+  const locations = useAppSelector(selectLocations) as Location[]
+  const companies = useAppSelector(selectCompanies) as Company[]
 
   const [companyFilter, setCompanyFilter] = useState<CompanyFilter>(
     contextCompanyId ?? "all"
@@ -106,11 +106,11 @@ export function ReportsPage() {
   }, [contextLocationId, isOpen, locationId])
 
   const companyById = useMemo(() => {
-    return new Map(companies.map((company) => [company.id, company]))
+    return new Map<string, Company>(companies.map((company) => [company.id, company]))
   }, [companies])
 
   const locationById = useMemo(() => {
-    return new Map(locations.map((location) => [location.id, location]))
+    return new Map<string, Location>(locations.map((location) => [location.id, location]))
   }, [locations])
 
   const filteredLocations = useMemo(() => {

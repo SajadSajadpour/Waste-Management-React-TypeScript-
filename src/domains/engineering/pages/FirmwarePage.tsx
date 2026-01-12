@@ -151,7 +151,7 @@ export function FirmwarePage() {
             }}
             rowActions={
               canPushFirmware
-                ? (row) => (
+                ? () => (
                     <Button variant="outline" size="sm">
                       Promote
                     </Button>

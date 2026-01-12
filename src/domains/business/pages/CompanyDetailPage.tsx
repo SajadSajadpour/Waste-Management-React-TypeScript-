@@ -24,9 +24,9 @@ type DeviceStatusEntry = {
 export function CompanyDetailPage() {
   const { companyId } = useParams()
   const navigate = useNavigate()
-  const companies = useAppSelector(selectCompanies)
-  const locations = useAppSelector(selectLocations)
-  const devices = useAppSelector(selectDevices)
+  const companies = useAppSelector(selectCompanies) as Company[]
+  const locations = useAppSelector(selectLocations) as Location[]
+  const devices = useAppSelector(selectDevices) as Device[]
   const statusList = deviceStatus as DeviceStatusEntry[]
 
   const company = useMemo(

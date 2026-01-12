@@ -19,7 +19,6 @@ import {
 import { selectLocations } from "@/app/store/slices/locationsSelectors"
 import { selectDevices } from "@/app/store/slices/devicesSelectors"
 import { selectCompanies } from "@/app/store/slices/companiesSelectors"
-import { companyList } from "@/shared/mock"
 import { Breadcrumbs } from "@/shared/components/Breadcrumbs"
 import { Button } from "@/shared/ui/button"
 import { Input } from "@/shared/ui/input"
@@ -31,6 +30,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/shared/ui/select"
+import type { Company, Device, Location } from "@/shared/mock/types"
 
 const personas: Persona[] = ["customerAdmin", "internalOps", "engineer"]
 
@@ -68,24 +68,19 @@ export function Topbar() {
   const locationId = useAppSelector(selectLocationId)
   const deviceId = useAppSelector(selectDeviceId)
   const dateRange = useAppSelector(selectDateRange)
-  const locationsFromStore = useAppSelector(selectLocations)
-  const devicesFromStore = useAppSelector(selectDevices)
-  const companiesFromStore = useAppSelector(selectCompanies)
+  const locationsFromStore = useAppSelector(selectLocations) as Location[]
+  const devicesFromStore = useAppSelector(selectDevices) as Device[]
+  const companiesFromStore = useAppSelector(selectCompanies) as Company[]
 
   const [isContextOpen, setIsContextOpen] = useState(false)
 
   const locations = useMemo(
     () =>
-      locationsFromStore.filter(
-        (location) => location.companyId === companyId
-      ),
+      locationsFromStore.filter((location: Location) => location.companyId === companyId),
     [companyId, locationsFromStore]
   )
   const devices = useMemo(
-    () =>
-      devicesFromStore.filter(
-        (device) => device.locationId === locationId
-      ),
+    () => devicesFromStore.filter((device: Device) => device.locationId === locationId),
     [locationId, devicesFromStore]
   )
 
@@ -98,7 +93,7 @@ export function Topbar() {
 
   const breadcrumbLabelMap = useMemo(() => {
     return Object.fromEntries(
-      companiesFromStore.map((company) => [company.id, company.name])
+      companiesFromStore.map((company: Company) => [company.id, company.name])
     )
   }, [companiesFromStore])
 
@@ -123,7 +118,7 @@ export function Topbar() {
           <SelectValue placeholder="Select company" />
         </SelectTrigger>
         <SelectContent>
-          {companyList.map((company) => (
+          {companiesFromStore.map((company: Company) => (
             <SelectItem key={company.id} value={company.id}>
               {company.name}
             </SelectItem>

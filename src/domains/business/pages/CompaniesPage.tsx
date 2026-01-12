@@ -13,7 +13,7 @@ import {
 import { selectLocations } from "@/app/store/slices/locationsSelectors"
 import { selectDevices } from "@/app/store/slices/devicesSelectors"
 import { routePaths } from "@/app/router/routes"
-import type { Company } from "@/shared/mock/types"
+import type { Company, Device, Location } from "@/shared/mock/types"
 import { DataTable } from "@/shared/components/DataTable"
 import { EmptyState } from "@/shared/components/EmptyState"
 import { PageHeader } from "@/shared/components/PageHeader"
@@ -41,11 +41,11 @@ function slugify(value: string) {
 export function CompaniesPage() {
   const navigate = useNavigate()
   const dispatch = useAppDispatch()
-  const items = useAppSelector(selectCompanies)
+  const items = useAppSelector(selectCompanies) as Company[]
   const status = useAppSelector(selectCompaniesStatus)
   const error = useAppSelector(selectCompaniesError)
-  const locations = useAppSelector(selectLocations)
-  const devices = useAppSelector(selectDevices)
+  const locations = useAppSelector(selectLocations) as Location[]
+  const devices = useAppSelector(selectDevices) as Device[]
   const [isOpen, setIsOpen] = useState(false)
   const [name, setName] = useState("")
   const hasOpenedOnce = useRef(false)

@@ -31,10 +31,10 @@ type LocationFilter = "all" | string
 export function LocationsPage() {
   const contextCompanyId = useAppSelector(selectCompanyId)
   const contextLocationId = useAppSelector(selectLocationId)
-  const items = useAppSelector(selectLocations)
+  const items = useAppSelector(selectLocations) as Location[]
   const status = useAppSelector(selectLocationsStatus)
   const error = useAppSelector(selectLocationsError)
-  const companies = useAppSelector(selectCompanies)
+  const companies = useAppSelector(selectCompanies) as Company[]
 
   const [companyFilter, setCompanyFilter] = useState<CompanyFilter>(
     contextCompanyId ?? "all"
@@ -63,11 +63,11 @@ export function LocationsPage() {
   }, [contextCompanyId, contextLocationId, isFilterPinned, items])
 
   const companyById = useMemo(() => {
-    return new Map(companies.map((company) => [company.id, company]))
+    return new Map<string, Company>(companies.map((company) => [company.id, company]))
   }, [companies])
 
   const locationById = useMemo(() => {
-    return new Map(items.map((location) => [location.id, location]))
+    return new Map<string, Location>(items.map((location) => [location.id, location]))
   }, [items])
 
   const filteredLocations = useMemo(() => {

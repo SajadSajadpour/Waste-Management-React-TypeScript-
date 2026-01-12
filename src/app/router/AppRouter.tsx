@@ -1,3 +1,4 @@
+import type { ReactElement } from "react"
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 
 import { AppShell } from "@/app/layout/AppShell"
@@ -21,7 +22,7 @@ import { LocationsPage } from "@/pages/LocationsPage"
 import { ProfilePage } from "@/pages/ProfilePage"
 import { StaffPage } from "@/pages/StaffPage"
 
-function RequireAuth({ children }: { children: JSX.Element }) {
+function RequireAuth({ children }: { children: ReactElement }) {
   const isAuthenticated = useAppSelector(selectIsAuthenticated)
   if (!isAuthenticated) {
     return <Navigate to={routePaths.auth.login} replace={true} />
@@ -34,7 +35,7 @@ function RequireCapability({
   children,
 }: {
   capability: Parameters<typeof selectHasCapability>[0]
-  children: JSX.Element
+  children: ReactElement
 }) {
   const hasCapability = useAppSelector(selectHasCapability(capability))
   const canViewBusiness = useAppSelector(selectHasCapability("can_view_business"))

@@ -43,13 +43,17 @@ export function StatusBadge({
   showDot = true,
   className,
 }: StatusBadgeProps) {
+  const safeVariant = variant ?? "info"
   return (
-    <Badge className={cn(statusBadgeVariants({ variant }), className)} variant="secondary">
+    <Badge
+      className={cn(statusBadgeVariants({ variant: safeVariant }), className)}
+      variant="secondary"
+    >
       {showDot ? (
         <span
           className={cn(
             "mr-1.5 inline-block h-2 w-2 rounded-full",
-            dotColors[variant]
+            dotColors[safeVariant]
           )}
         />
       ) : null}

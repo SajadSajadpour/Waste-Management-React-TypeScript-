@@ -117,15 +117,18 @@ export function DevicesPage() {
   }, [contextCompanyId, contextLocationId, isLocationPinned, locations])
 
   const companyById = useMemo(() => {
-    return new Map(companies.map((company) => [company.id, company]))
+    return new Map<string, Company>(companies.map((company) => [company.id, company]))
   }, [companies])
 
   const locationById = useMemo(() => {
-    return new Map(locations.map((location) => [location.id, location]))
+    return new Map<string, Location>(locations.map((location) => [location.id, location]))
   }, [locations])
 
   const statusById = useMemo(
-    () => new Map(statusList.map((entry) => [entry.deviceId, entry.status])),
+    () =>
+      new Map<string, DeviceStatusEntry["status"]>(
+        statusList.map((entry) => [entry.deviceId, entry.status])
+      ),
     [statusList]
   )
 

@@ -49,10 +49,10 @@ function slugify(value: string) {
 export function LocationsPage() {
   const dispatch = useAppDispatch()
   const contextCompanyId = useAppSelector(selectCompanyId)
-  const items = useAppSelector(selectLocations)
+  const items = useAppSelector(selectLocations) as Location[]
   const status = useAppSelector(selectLocationsStatus)
   const error = useAppSelector(selectLocationsError)
-  const companies = useAppSelector(selectCompanies)
+  const companies = useAppSelector(selectCompanies) as Company[]
   const [filterCompanyId, setFilterCompanyId] = useState<CompanyFilter>(
     contextCompanyId ?? "all"
   )
@@ -107,7 +107,7 @@ export function LocationsPage() {
   }, [filterCompanyId, items])
 
   const companyById = useMemo(() => {
-    return new Map(companies.map((company) => [company.id, company]))
+    return new Map<string, Company>(companies.map((company) => [company.id, company]))
   }, [companies])
 
   const columns = useMemo<ColumnDef<Location>[]>(

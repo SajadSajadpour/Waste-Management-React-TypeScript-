@@ -1,4 +1,4 @@
-import type { RootState } from "@/app/store"
+import type { RootState } from "./index"
 import {
   getCapabilitiesForPersona,
   type AuthStatus,

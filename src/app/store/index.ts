@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit"
+import { combineReducers, configureStore } from "@reduxjs/toolkit"
 
 import authReducer from "./slices/authSlice"
 import businessReducer from "./slices/businessSlice"
@@ -13,20 +13,24 @@ import staffReducer from "./slices/staffSlice"
 import uiReducer from "./slices/uiSlice"
 import { loadPersistedState, persistState } from "./persist"
 
+const reducersMap = {
+  auth: authReducer,
+  business: businessReducer,
+  companies: companiesReducer,
+  context: contextReducer,
+  devices: devicesReducer,
+  engineering: engineeringReducer,
+  locations: locationsReducer,
+  operations: operationsReducer,
+  reports: reportsReducer,
+  staff: staffReducer,
+  ui: uiReducer,
+}
+
+const rootReducer = combineReducers(reducersMap)
+
 export const store = configureStore({
-  reducer: {
-    auth: authReducer,
-    business: businessReducer,
-    companies: companiesReducer,
-    context: contextReducer,
-    devices: devicesReducer,
-    engineering: engineeringReducer,
-    locations: locationsReducer,
-    operations: operationsReducer,
-    reports: reportsReducer,
-    staff: staffReducer,
-    ui: uiReducer,
-  },
+  reducer: rootReducer,
   preloadedState: loadPersistedState(),
 })
 
@@ -38,5 +42,5 @@ store.subscribe(() => {
   persistState(store.getState())
 })
 
-export type RootState = ReturnType<typeof store.getState>
+export type RootState = ReturnType<typeof rootReducer>
 export type AppDispatch = typeof store.dispatch

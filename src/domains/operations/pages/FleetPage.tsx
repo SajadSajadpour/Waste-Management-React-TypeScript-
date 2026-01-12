@@ -16,6 +16,7 @@ import { Section } from "@/shared/components/Section"
 import { StatusBadge } from "@/shared/components/StatusBadge"
 import { useFleet } from "@/shared/hooks/useFleet"
 import { deviceList, locationList } from "@/shared/mock"
+import type { Device, Location } from "@/shared/mock/types"
 import { formatRelativeTime } from "@/shared/utils/date"
 import { Button } from "@/shared/ui/button"
 import {
@@ -58,6 +59,8 @@ export function FleetPage() {
   const locationId = useAppSelector(selectLocationId)
   const { data, status, error, refetch } = useFleet()
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("all")
+  const devices = deviceList as Device[]
+  const locations = locationList as Location[]
 
   useEffect(() => {
     refetch()
@@ -65,8 +68,8 @@ export function FleetPage() {
 
   const rows = useMemo<FleetRow[]>(() => {
     return data.map((device) => {
-      const deviceInfo = deviceList.find((item) => item.id === device.deviceId)
-      const location = locationList.find(
+      const deviceInfo = devices.find((item) => item.id === device.deviceId)
+      const location = locations.find(
         (item) => item.id === deviceInfo?.locationId
       )
 
@@ -81,7 +84,7 @@ export function FleetPage() {
         needsMaintenance: device.needsMaintenance,
       }
     })
-  }, [data])
+  }, [data, devices, locations])
 
   const filteredRows = useMemo(() => {
     if (statusFilter === "all") return rows

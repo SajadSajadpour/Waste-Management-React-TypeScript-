@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 import { navGroups, routePaths } from "@/app/router/routes"
 import { useAppDispatch, useAppSelector } from "@/app/store/hooks"
-import { logout } from "@/app/store/slices/authSlice"
+import { logout, type Capability } from "@/app/store/slices/authSlice"
 import { AppTitle } from "@/shared/components/AppTitle"
 import { IconNavItem } from "@/shared/components/IconNavItem"
 import { cn } from "@/shared/utils/cn"
@@ -14,7 +14,7 @@ export function Sidebar() {
   const { capabilities } = useAppSelector((state) => state.auth)
   const { sidebarCollapsed } = useAppSelector((state) => state.ui)
 
-  const hasAny = (required?: string[]) =>
+  const hasAny = (required?: Capability[]) =>
     !required || required.some((capability) => capabilities.includes(capability))
 
   const getVisibleItems = (group: (typeof navGroups)[number]) => {

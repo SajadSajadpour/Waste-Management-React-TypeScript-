@@ -13,13 +13,14 @@ import { PageHeader } from "@/shared/components/PageHeader"
 import { PageLayout } from "@/shared/components/PageLayout"
 import { Section } from "@/shared/components/Section"
 import { Button } from "@/shared/ui/button"
+import type { Company, Device, Location } from "@/shared/mock/types"
 
 export function BusinessDeviceDetailPage() {
   const { deviceId } = useParams()
   const navigate = useNavigate()
-  const devices = useAppSelector(selectDevices)
-  const locations = useAppSelector(selectLocations)
-  const companies = useAppSelector(selectCompanies)
+  const devices = useAppSelector(selectDevices) as Device[]
+  const locations = useAppSelector(selectLocations) as Location[]
+  const companies = useAppSelector(selectCompanies) as Company[]
   const canViewEng = useAppSelector(selectHasCapability("can_view_eng"))
 
   const device = useMemo(
