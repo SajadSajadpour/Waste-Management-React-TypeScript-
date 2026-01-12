@@ -65,5 +65,4 @@ This is a demo project. If you want to extend it, keep changes small and aligned
 MIT
 
 ## Author
-- Name: [Your Name]
-- Contact: [your.email@example.com]
+- Name: Sajad
