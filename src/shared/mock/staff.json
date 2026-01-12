@@ -1,0 +1,74 @@
+[
+  {
+    "id": "staff-northstar-chi-ava",
+    "name": "Ava Thompson",
+    "email": "ava.thompson@northstar.example.com",
+    "role": "Admin",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-chi",
+    "createdAt": "2024-02-12T14:22:00Z"
+  },
+  {
+    "id": "staff-northstar-den-ryan",
+    "name": "Ryan Patel",
+    "email": "ryan.patel@northstar.example.com",
+    "role": "Manager",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-den",
+    "createdAt": "2024-03-05T09:10:00Z"
+  },
+  {
+    "id": "staff-northstar-chi-maya",
+    "name": "Maya Chen",
+    "email": "maya.chen@northstar.example.com",
+    "role": "Staff",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-chi",
+    "createdAt": "2024-04-18T17:45:00Z"
+  },
+  {
+    "id": "staff-sundial-nyc-lena",
+    "name": "Lena Ortiz",
+    "email": "lena.ortiz@sundial.example.com",
+    "role": "Admin",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-nyc",
+    "createdAt": "2024-01-22T12:05:00Z"
+  },
+  {
+    "id": "staff-sundial-mia-carlos",
+    "name": "Carlos Mendez",
+    "email": "carlos.mendez@sundial.example.com",
+    "role": "Manager",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-mia",
+    "createdAt": "2024-05-09T11:30:00Z"
+  },
+  {
+    "id": "staff-windmill-aus-sienna",
+    "name": "Sienna Brooks",
+    "email": "sienna.brooks@windmill.example.com",
+    "role": "Staff",
+    "companyId": "comp-windmill",
+    "locationId": "loc-windmill-aus",
+    "createdAt": "2024-02-28T08:15:00Z"
+  },
+  {
+    "id": "staff-windmill-sea-omar",
+    "name": "Omar Reyes",
+    "email": "omar.reyes@windmill.example.com",
+    "role": "Manager",
+    "companyId": "comp-windmill",
+    "locationId": "loc-windmill-sea",
+    "createdAt": "2024-06-03T16:20:00Z"
+  },
+  {
+    "id": "staff-sundial-nyc-jules",
+    "name": "Jules Park",
+    "email": "jules.park@sundial.example.com",
+    "role": "Staff",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-nyc",
+    "createdAt": "2024-07-01T10:40:00Z"
+  }
+]

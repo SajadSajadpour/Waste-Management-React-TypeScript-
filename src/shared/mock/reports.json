@@ -1,0 +1,66 @@
+[
+  {
+    "id": "rep-northstar-chi-waste-trends",
+    "name": "Waste Trends Q1",
+    "type": "Usage",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-chi",
+    "createdAt": "2024-02-10T13:12:00Z"
+  },
+  {
+    "id": "rep-northstar-den-fleet-health",
+    "name": "Fleet Health Snapshot",
+    "type": "Fleet",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-den",
+    "createdAt": "2024-03-14T09:35:00Z"
+  },
+  {
+    "id": "rep-sundial-nyc-compliance",
+    "name": "Compliance Summary",
+    "type": "Compliance",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-nyc",
+    "createdAt": "2024-01-28T16:20:00Z"
+  },
+  {
+    "id": "rep-sundial-mia-usage",
+    "name": "Usage Overview",
+    "type": "Usage",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-mia",
+    "createdAt": "2024-04-02T11:05:00Z"
+  },
+  {
+    "id": "rep-windmill-aus-fleet",
+    "name": "Fleet Reliability",
+    "type": "Fleet",
+    "companyId": "comp-windmill",
+    "locationId": "loc-windmill-aus",
+    "createdAt": "2024-05-19T08:48:00Z"
+  },
+  {
+    "id": "rep-windmill-sea-compliance",
+    "name": "Compliance Audit",
+    "type": "Compliance",
+    "companyId": "comp-windmill",
+    "locationId": "loc-windmill-sea",
+    "createdAt": "2024-06-07T15:30:00Z"
+  },
+  {
+    "id": "rep-northstar-chi-fleet",
+    "name": "Fleet Cycles Report",
+    "type": "Fleet",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-chi",
+    "createdAt": "2024-07-01T10:00:00Z"
+  },
+  {
+    "id": "rep-sundial-nyc-usage",
+    "name": "Usage Peak Hours",
+    "type": "Usage",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-nyc",
+    "createdAt": "2024-07-12T14:40:00Z"
+  }
+]

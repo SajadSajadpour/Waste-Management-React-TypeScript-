@@ -1,0 +1,74 @@
+[
+  {
+    "companyId": "comp-northstar",
+    "dateRangeKey": "last7",
+    "co2AvoidedKg": 842,
+    "wasteDivertedKg": 12640,
+    "cyclesCompleted": 312,
+    "maintenanceRequiredCount": 3
+  },
+  {
+    "companyId": "comp-northstar",
+    "dateRangeKey": "last30",
+    "co2AvoidedKg": 3420,
+    "wasteDivertedKg": 52180,
+    "cyclesCompleted": 1292,
+    "maintenanceRequiredCount": 8
+  },
+  {
+    "companyId": "comp-northstar",
+    "dateRangeKey": "ytd",
+    "co2AvoidedKg": 22840,
+    "wasteDivertedKg": 318400,
+    "cyclesCompleted": 8120,
+    "maintenanceRequiredCount": 32
+  },
+  {
+    "companyId": "comp-sundial",
+    "dateRangeKey": "last7",
+    "co2AvoidedKg": 610,
+    "wasteDivertedKg": 9420,
+    "cyclesCompleted": 241,
+    "maintenanceRequiredCount": 2
+  },
+  {
+    "companyId": "comp-sundial",
+    "dateRangeKey": "last30",
+    "co2AvoidedKg": 2580,
+    "wasteDivertedKg": 38410,
+    "cyclesCompleted": 968,
+    "maintenanceRequiredCount": 6
+  },
+  {
+    "companyId": "comp-sundial",
+    "dateRangeKey": "ytd",
+    "co2AvoidedKg": 17630,
+    "wasteDivertedKg": 248900,
+    "cyclesCompleted": 6542,
+    "maintenanceRequiredCount": 25
+  },
+  {
+    "companyId": "comp-windmill",
+    "dateRangeKey": "last7",
+    "co2AvoidedKg": 520,
+    "wasteDivertedKg": 8010,
+    "cyclesCompleted": 198,
+    "maintenanceRequiredCount": 1
+  },
+  {
+    "companyId": "comp-windmill",
+    "dateRangeKey": "last30",
+    "co2AvoidedKg": 2130,
+    "wasteDivertedKg": 32110,
+    "cyclesCompleted": 844,
+    "maintenanceRequiredCount": 5
+  },
+  {
+    "companyId": "comp-windmill",
+    "dateRangeKey": "ytd",
+    "co2AvoidedKg": 14920,
+    "wasteDivertedKg": 201300,
+    "cyclesCompleted": 5480,
+    "maintenanceRequiredCount": 19
+  }
+]

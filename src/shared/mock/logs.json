@@ -1,0 +1,32 @@
+[
+  {
+    "deviceId": "dev-chi-001",
+    "entries": [
+      { "ts": "2025-02-15T10:10:00Z", "level": "info", "message": "Cycle completed successfully." },
+      { "ts": "2025-02-15T11:02:00Z", "level": "debug", "message": "Load cell calibrated." },
+      { "ts": "2025-02-15T11:45:00Z", "level": "info", "message": "Remote diagnostic ping responded." }
+    ]
+  },
+  {
+    "deviceId": "dev-chi-002",
+    "entries": [
+      { "ts": "2025-02-14T17:50:00Z", "level": "warn", "message": "Motor load spiked to 92%." },
+      { "ts": "2025-02-14T17:55:00Z", "level": "error", "message": "Drive motor overload fault." },
+      { "ts": "2025-02-14T18:10:00Z", "level": "info", "message": "Maintenance mode enabled." }
+    ]
+  },
+  {
+    "deviceId": "dev-den-002",
+    "entries": [
+      { "ts": "2025-02-13T08:12:00Z", "level": "warn", "message": "Connectivity lost." },
+      { "ts": "2025-02-13T08:45:00Z", "level": "info", "message": "Attempting reconnect." }
+    ]
+  },
+  {
+    "deviceId": "dev-nyc-001",
+    "entries": [
+      { "ts": "2025-02-12T10:05:00Z", "level": "info", "message": "Firmware update started." },
+      { "ts": "2025-02-12T10:40:00Z", "level": "info", "message": "Firmware update completed." }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "loc-northstar-chi", "name": "Chicago Loop", "companyId": "comp-northstar" },
+  { "id": "loc-northstar-den", "name": "Denver Central", "companyId": "comp-northstar" },
+  { "id": "loc-sundial-nyc", "name": "Manhattan West", "companyId": "comp-sundial" },
+  { "id": "loc-sundial-mia", "name": "Miami Beach", "companyId": "comp-sundial" },
+  { "id": "loc-windmill-aus", "name": "Austin South", "companyId": "comp-windmill" },
+  { "id": "loc-windmill-sea", "name": "Seattle Wharf", "companyId": "comp-windmill" }
+]

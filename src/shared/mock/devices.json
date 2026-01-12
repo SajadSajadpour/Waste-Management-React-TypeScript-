@@ -1,0 +1,14 @@
+[
+  { "id": "dev-chi-001", "name": "CHI-FC-001", "locationId": "loc-northstar-chi" },
+  { "id": "dev-chi-002", "name": "CHI-FC-002", "locationId": "loc-northstar-chi" },
+  { "id": "dev-den-001", "name": "DEN-FC-001", "locationId": "loc-northstar-den" },
+  { "id": "dev-den-002", "name": "DEN-FC-002", "locationId": "loc-northstar-den" },
+  { "id": "dev-nyc-001", "name": "NYC-FC-001", "locationId": "loc-sundial-nyc" },
+  { "id": "dev-nyc-002", "name": "NYC-FC-002", "locationId": "loc-sundial-nyc" },
+  { "id": "dev-mia-001", "name": "MIA-FC-001", "locationId": "loc-sundial-mia" },
+  { "id": "dev-mia-002", "name": "MIA-FC-002", "locationId": "loc-sundial-mia" },
+  { "id": "dev-aus-001", "name": "AUS-FC-001", "locationId": "loc-windmill-aus" },
+  { "id": "dev-aus-002", "name": "AUS-FC-002", "locationId": "loc-windmill-aus" },
+  { "id": "dev-sea-001", "name": "SEA-FC-001", "locationId": "loc-windmill-sea" },
+  { "id": "dev-sea-002", "name": "SEA-FC-002", "locationId": "loc-windmill-sea" }
+]

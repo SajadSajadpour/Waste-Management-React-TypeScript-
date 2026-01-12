@@ -1,0 +1,98 @@
+[
+  {
+    "deviceId": "dev-chi-001",
+    "status": "online",
+    "lastSeen": "2025-02-15T12:05:00Z",
+    "firmwareVersion": "3.4.1",
+    "cycles7d": 42,
+    "needsMaintenance": false
+  },
+  {
+    "deviceId": "dev-chi-002",
+    "status": "maintenance",
+    "lastSeen": "2025-02-14T18:22:00Z",
+    "firmwareVersion": "3.3.8",
+    "cycles7d": 18,
+    "needsMaintenance": true
+  },
+  {
+    "deviceId": "dev-den-001",
+    "status": "online",
+    "lastSeen": "2025-02-15T11:47:00Z",
+    "firmwareVersion": "3.4.1",
+    "cycles7d": 39,
+    "needsMaintenance": false
+  },
+  {
+    "deviceId": "dev-den-002",
+    "status": "offline",
+    "lastSeen": "2025-02-13T09:12:00Z",
+    "firmwareVersion": "3.3.2",
+    "cycles7d": 11,
+    "needsMaintenance": true
+  },
+  {
+    "deviceId": "dev-nyc-001",
+    "status": "online",
+    "lastSeen": "2025-02-15T12:15:00Z",
+    "firmwareVersion": "3.4.2",
+    "cycles7d": 46,
+    "needsMaintenance": false
+  },
+  {
+    "deviceId": "dev-nyc-002",
+    "status": "online",
+    "lastSeen": "2025-02-15T12:02:00Z",
+    "firmwareVersion": "3.4.0",
+    "cycles7d": 33,
+    "needsMaintenance": false
+  },
+  {
+    "deviceId": "dev-mia-001",
+    "status": "maintenance",
+    "lastSeen": "2025-02-14T16:30:00Z",
+    "firmwareVersion": "3.3.9",
+    "cycles7d": 20,
+    "needsMaintenance": true
+  },
+  {
+    "deviceId": "dev-mia-002",
+    "status": "offline",
+    "lastSeen": "2025-02-12T08:40:00Z",
+    "firmwareVersion": "3.2.7",
+    "cycles7d": 9,
+    "needsMaintenance": true
+  },
+  {
+    "deviceId": "dev-aus-001",
+    "status": "online",
+    "lastSeen": "2025-02-15T11:58:00Z",
+    "firmwareVersion": "3.4.1",
+    "cycles7d": 37,
+    "needsMaintenance": false
+  },
+  {
+    "deviceId": "dev-aus-002",
+    "status": "online",
+    "lastSeen": "2025-02-15T11:51:00Z",
+    "firmwareVersion": "3.4.1",
+    "cycles7d": 34,
+    "needsMaintenance": false
+  },
+  {
+    "deviceId": "dev-sea-001",
+    "status": "online",
+    "lastSeen": "2025-02-15T12:08:00Z",
+    "firmwareVersion": "3.4.2",
+    "cycles7d": 41,
+    "needsMaintenance": false
+  },
+  {
+    "deviceId": "dev-sea-002",
+    "status": "maintenance",
+    "lastSeen": "2025-02-14T14:05:00Z",
+    "firmwareVersion": "3.3.5",
+    "cycles7d": 16,
+    "needsMaintenance": true
+  }
+]

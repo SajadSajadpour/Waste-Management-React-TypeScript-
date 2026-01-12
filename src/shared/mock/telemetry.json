@@ -1,0 +1,26 @@
+[
+  {
+    "deviceId": "dev-chi-001",
+    "entries": [
+      { "ts": "2025-02-15T11:40:00Z", "tempC": 62.5, "motorLoadPct": 54, "cyclePhase": "grind", "doorOpen": false },
+      { "ts": "2025-02-15T11:45:00Z", "tempC": 68.1, "motorLoadPct": 61, "cyclePhase": "dry", "doorOpen": false },
+      { "ts": "2025-02-15T11:50:00Z", "tempC": 58.3, "motorLoadPct": 42, "cyclePhase": "cooldown", "doorOpen": false }
+    ]
+  },
+  {
+    "deviceId": "dev-chi-002",
+    "entries": [
+      { "ts": "2025-02-14T17:40:00Z", "tempC": 71.8, "motorLoadPct": 88, "cyclePhase": "grind", "doorOpen": false },
+      { "ts": "2025-02-14T17:45:00Z", "tempC": 76.2, "motorLoadPct": 95, "cyclePhase": "grind", "doorOpen": false },
+      { "ts": "2025-02-14T17:50:00Z", "tempC": 80.4, "motorLoadPct": 99, "cyclePhase": "grind", "doorOpen": false }
+    ]
+  },
+  {
+    "deviceId": "dev-sea-002",
+    "entries": [
+      { "ts": "2025-02-14T13:40:00Z", "tempC": 74.6, "motorLoadPct": 84, "cyclePhase": "dry", "doorOpen": false },
+      { "ts": "2025-02-14T13:45:00Z", "tempC": 79.3, "motorLoadPct": 92, "cyclePhase": "dry", "doorOpen": false },
+      { "ts": "2025-02-14T13:50:00Z", "tempC": 83.9, "motorLoadPct": 97, "cyclePhase": "dry", "doorOpen": false }
+    ]
+  }
+]

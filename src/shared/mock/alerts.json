@@ -1,0 +1,74 @@
+[
+  {
+    "id": "alert-1001",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-chi",
+    "deviceId": "dev-chi-002",
+    "severity": "critical",
+    "state": "open",
+    "title": "Drive motor overload",
+    "description": "Motor load exceeded safe threshold during grind cycle.",
+    "createdAt": "2025-02-14T17:55:00Z",
+    "updatedAt": "2025-02-15T09:10:00Z"
+  },
+  {
+    "id": "alert-1002",
+    "companyId": "comp-northstar",
+    "locationId": "loc-northstar-den",
+    "deviceId": "dev-den-002",
+    "severity": "warn",
+    "state": "ack",
+    "title": "Connectivity drop",
+    "description": "Device offline for more than 12 hours.",
+    "createdAt": "2025-02-13T08:40:00Z",
+    "updatedAt": "2025-02-14T12:05:00Z"
+  },
+  {
+    "id": "alert-1003",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-mia",
+    "deviceId": "dev-mia-001",
+    "severity": "warn",
+    "state": "open",
+    "title": "Filter change required",
+    "description": "Filter runtime exceeded recommended interval.",
+    "createdAt": "2025-02-14T15:20:00Z",
+    "updatedAt": "2025-02-15T08:45:00Z"
+  },
+  {
+    "id": "alert-1004",
+    "companyId": "comp-sundial",
+    "locationId": "loc-sundial-nyc",
+    "deviceId": "dev-nyc-001",
+    "severity": "info",
+    "state": "resolved",
+    "title": "Firmware update complete",
+    "description": "Device updated to firmware 3.4.2.",
+    "createdAt": "2025-02-12T10:05:00Z",
+    "updatedAt": "2025-02-12T10:45:00Z"
+  },
+  {
+    "id": "alert-1005",
+    "companyId": "comp-windmill",
+    "locationId": "loc-windmill-sea",
+    "deviceId": "dev-sea-002",
+    "severity": "critical",
+    "state": "open",
+    "title": "Thermal cutoff triggered",
+    "description": "Unit entered safety shutdown due to temperature spike.",
+    "createdAt": "2025-02-14T13:50:00Z",
+    "updatedAt": "2025-02-15T07:30:00Z"
+  },
+  {
+    "id": "alert-1006",
+    "companyId": "comp-windmill",
+    "locationId": "loc-windmill-aus",
+    "deviceId": "dev-aus-001",
+    "severity": "info",
+    "state": "ack",
+    "title": "Cycle variance detected",
+    "description": "Cycle duration exceeded typical baseline by 12%.",
+    "createdAt": "2025-02-13T09:25:00Z",
+    "updatedAt": "2025-02-13T10:00:00Z"
+  }
+]
