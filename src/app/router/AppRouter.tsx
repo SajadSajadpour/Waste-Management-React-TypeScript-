@@ -1,5 +1,5 @@
 import type { ReactElement } from "react"
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom"
 
 import { AppShell } from "@/app/layout/AppShell"
 import { routePaths } from "@/app/router/routes"
@@ -54,7 +54,7 @@ function RequireCapability({
 
 export function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path={routePaths.auth.login} element={<LoginPage />} />
         <Route
@@ -133,6 +133,6 @@ export function AppRouter() {
           <Route path={routePaths.account.profile} element={<ProfilePage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
