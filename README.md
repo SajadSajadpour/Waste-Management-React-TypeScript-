@@ -3,6 +3,9 @@
 ## Overview
 Cycler Dashboard Demo is a React + TypeScript frontend that showcases a multi‑domain operations dashboard for a commercial Cycler fleet. The app is fully client‑side with mock data and demonstrates navigation, routing, role‑based access, and reusable UI patterns.
 
+## Live Demo
+https://<username>.github.io/foodcycler-dashboard-demo/
+
 ## Features
 - Authenticated demo flow with login/logout and persisted session
 - Role‑aware navigation and capability gating
@@ -39,6 +42,17 @@ npm run build
 npm run preview
 npm run lint
 ```
+
+## GitHub Pages Deployment
+1) Ensure `vite.config.ts` uses `base: "/foodcycler-dashboard-demo/"`.  
+2) Build the project:
+```bash
+npm run build
+```
+3) Deploy `dist/` to GitHub Pages (e.g., `gh-pages` branch).  
+4) In repository Settings → Pages, select the deployed branch and root.
+
+Note: `public/404.html` is included to support client-side routing on GitHub Pages.
 
 ## Environment Variables
 None required. The app runs entirely with local mock data.
